@@ -1,0 +1,60 @@
+/* PC */
+@media (min-width: 1024px){
+    .menu-nav{
+        display: none;
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .nav{
+        position: relative;
+    }
+    .login a{
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+    }
+    .login li{
+        margin-left: 10px;
+    }
+    .nav-list{
+        display: block;
+        position: absolute;
+        top: 70px;
+        background-color:rgb(94, 41, 41) ;
+    }
+    .nav-list a{
+        color: #fff;
+        padding-left: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+    .menu-nav{
+        margin-left: 10px;
+        padding: 5px 10px;
+        /* border: 2px solid rgb(94, 41, 41); */
+        border-radius: 3px;
+        font-size: 30px;
+    }
+    .menu-nav i{
+        color:rgb(94, 41, 41) ;
+    }
+    /* Slider */
+    .slider-container{
+        height: 400px;
+    }
+    /* About*/
+    .about{
+        margin: 0 20px;
+    }
+    .about-item .letter{
+        margin-top: 0;
+    }
+    .ml-30-tb{
+        margin-left: 30px !important;
+    }
+    .mr-30-tb{
+        margin-right: 30px !important;
+    }
+
+}
