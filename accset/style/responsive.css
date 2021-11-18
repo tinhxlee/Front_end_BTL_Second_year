@@ -101,14 +101,14 @@
 @media (max-width: 739px){
     .nav{
         position: fixed;
-        height: 200px;
+        height: 100px;
         width: 380px;
         
     }
     .nav img{
         margin-left: 0;
         min-width: 100px;
-        height: 100px;
+        height: 90px;
     }
     .login a{
         width: 100%;
@@ -121,9 +121,9 @@
     .nav-list{
         display: none;
         position: absolute;
-        top: 200px;
+        top: 100px;
         background-color:rgb(94, 41, 41) ;
-        width: 300px;
+        width: 200px;
     }
     .nav-list a{
         color: #fff;
@@ -131,11 +131,11 @@
         text-align: center;
         border-bottom: 1px solid #fff;
         width: 100%;
-        font-size: 30px;        
+        font-size: 16px;        
     }
     .menu-nav{
         margin-left: 10px;
-        padding: 10px 20px;
+        padding: 5px 10px;
         border-radius: 3px;
         font-size: 20px;
     }
@@ -147,6 +147,10 @@
     }
     .login{
         flex-direction: column;
+        margin-top: 10px;
+    }
+    .login li{
+        margin-bottom: 10px;
     }
     .sub-nav{
         background-color: rgb(94, 41, 41);
@@ -155,7 +159,7 @@
     .slider-container{
         min-width: 300px;
         height: 200px;
-        margin-top: 200px;
+        margin-top: 100px;
 
     }
     .slider-container .slider-img{
