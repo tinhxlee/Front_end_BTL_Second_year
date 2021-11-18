@@ -12,22 +12,25 @@
     .login a{
         width: 100%;
         text-align: center;
-        font-size: 10px;
+        font-size: 16px;
     }
     .login li{
         margin-left: 10px;
     }
     .nav-list{
-        display: block;
+        display: none;
         position: absolute;
         top: 70px;
         background-color:rgb(94, 41, 41) ;
+        width: 200px;
     }
     .nav-list a{
         color: #fff;
         padding-left: 0;
         margin-left: 0;
         text-align: center;
+        border-bottom: 1px solid #fff;
+        width: 100%;
     }
     .menu-nav{
         margin-left: 10px;
@@ -39,9 +42,13 @@
     .menu-nav i{
         color:rgb(94, 41, 41) ;
     }
+    .sub-nav{
+        background-color: rgb(94, 41, 41);
+    }
     /* Slider */
     .slider-container{
         height: 400px;
+        margin-top: 0;
     }
     /* About*/
     .about{
@@ -55,6 +62,110 @@
     }
     .mr-30-tb{
         margin-right: 30px !important;
+    }
+    /* Team */
+    .team-1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-item{
+        /* width: 100%; */
+        margin-bottom: 30px;
+    }
+    /* Menu */
+    .menu{
+        margin: 0 20px;
+    }
+    /* Contact */
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact .infor{
+        margin-bottom: 30px;
+    }
+    .contact .send{
+        margin-right: 120px;
+        margin-bottom: 30px;
+    }
+    .social{
+        margin-right: 200px;
+    }
+
+}
+/* Mobile */
+@media (max-width: 739px){
+    .nav{
+        position: fixed;
+        min-width: 800px;
+        height: 200px;
+    }
+    .nav img{
+        margin-left: 0;
+        width: 150px;
+    }
+    .login a{
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+    }
+    .login li{
+        margin-left: 10px;
+    }
+    .nav-list{
+        display: none;
+        position: absolute;
+        top: 200px;
+        background-color:rgb(94, 41, 41) ;
+        width: 400px;
+    }
+    .nav-list a{
+        color: #fff;
+        margin-left: 0;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        font-size: 30px;        
+        height: 200px;
+        line-height: 200px;
+    }
+    .menu-nav{
+        margin-left: 10px;
+        padding: 10px 20px;
+        border-radius: 3px;
+        font-size: 50px;
+    }
+    .menu-nav i{
+        color:rgb(94, 41, 41) ;
+        width: 50px;
+    }
+    .sub-nav{
+        background-color: rgb(94, 41, 41);
+    }
+    .slider-container{
+        height: 500px;
+        margin-top: 200px;
+
+    }
+    .slider-container .slider-img{
+        /* width: 100%;
+        height: 100%; */
+    }
+    /* About */
+    .about{
+        margin: 0 10px;
+    }
+    .about-item{
+        display: block;
+        width: 300px;
+        text-align: center;
+    }
+    .about-item img{
+        height: 1000px;
     }
 
 }

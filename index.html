@@ -15,16 +15,16 @@
         <a href="#"><i class="fas fa-arrow-up"></i></a>
     </div>
     <div class="nav">
-        <div class="menu-nav">
-            <a href=""><i class="fas fa-bars"></i></a>
+        <div id="menu-mobile-id" class="menu-nav">
+            <a href="#"><i class="fas fa-bars"></i></a>
         </div>
         <a href="#"><img src="./image/nav/deer-1.jpg" alt="Logo"></a>
-        <ul class="nav-list">
+        <ul id="nav-list-id" class="nav-list">
             <li><a class="nav-name" href="#about-1">About</a></li>
             <li><a class="nav-name" href="#store-id">Store</a></li>
             <li><a class="nav-name" href="#team-id">Team</a></li>
             <li>
-                <a class="nav-name display-sub" href="#menu-id">Menu <i class="fas fa-caret-down"></i></a>
+                <a class="nav-name display-sub" href="#">Menu <i class="fas fa-caret-down"></i></a>
                 <ul class="sub-nav">
                     <li><a href="">Coffee</a></li>
                     <li><a href="">Cakes</a></li>
@@ -160,10 +160,14 @@
                 </div>
                 <div class="send">
                     <p>Đăng ký nhận tin khuyến mại </p>
-                    <form>
-                        <input id="input-id" class="input" type="email" required placeholder="Enter your Email"> 
-                        <input onclick="success();" class="btn" required type="submit" value="SUBMIT">
+                    <form action="">
+                        <input id="input-id" class="input" type="email"  placeholder="Enter your Email"> 
+                        <input onclick="success()" class="btn"  type="button" value="SUBMIT">
                     </form>
+                    <!-- <form action="" >
+                        <input class= "input" required id="mail_text" type="email" name="email"  placeholder="Enter your email">
+                        <button onclick="valicheck()" class="btn" type="submit" >SUBMIT</button>
+                    </form> -->
                 </div>
                 <div class="social">
                     <div class="thong-bao">

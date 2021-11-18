@@ -161,6 +161,7 @@ button:hover i{
 #slider{
 }
 .slider-container{
+    min-width: 800px;
     height: 500px;
     position: relative;
     margin-top: 70px;
@@ -414,6 +415,7 @@ button:hover i{
     align-items: center;
     justify-content: center;
     display: none;
+    transition: 100s linear;
 }
 .success-email h3{
     width: 500px;

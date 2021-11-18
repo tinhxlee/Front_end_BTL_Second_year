@@ -4,7 +4,7 @@ var images = [
     './image/Slider/2.jpg',
     './image/Slider/3.jpg',
     './image/Slider/4.jpg',
-    './image/Slider/5.jpg'
+    
 ];
 var num = 0 ;
 function next(){
@@ -44,31 +44,42 @@ function closeLogin(){
 }
 model.addEventListener('click',closeLogin);
 // Input email
-// const input = document.querySelector('.input');
 const btnEmail = document.querySelector('.btn');
 let modelEmail = document.querySelector('.success-email')
-// function checkEmail(){
-//     if(input.test('/[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,}$/') == true){
-//         return true ;
-//     }else {
-//         return false
-//     }
-// }
-let e = /[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,}$/;
-let inputId = document.getElementById('input-id').value ;
-function success(){ 
-    if(e.test(inputId) == false){
-        alert('hay nhap mk');
-        // return true;
+let inputID = document.getElementById('input-id');
+// btnEmail.addEventListener('click',success());
+function success(){
+    if(inputID.value == ''){
+        alert('Hay nhap email');
     }
-    else{
-        // modelEmail.style.display = 'flex';
-        alert('cam on ban');
+    else {
+        modelEmail.style.display = 'flex';
     }
 }
+// function valicheck(){
+//     var email = document.getElementById("mail_text").value;
+//     if (email == "") {
+//     alert("Email không được để trống");
+//     }
+//     else{
+//         modelEmail.style.display = 'flex';
+//     }
+    
+// }
 function closeSuccess(){
     modelEmail.style.display = 'none';
 }
 
-// var checkEmail = /[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,}$/ ;
 modelEmail.addEventListener('click',closeSuccess);
+// Mobile - menu
+let menuBtn = document.getElementById('menu-mobile-id');
+let menuList = document.getElementById('nav-list-id');
+menuBtn.addEventListener('click',displayListMenu);
+function displayListMenu(){
+    if(menuList.style.display == 'none'){
+        menuList.style.display = 'block';
+    }
+    else{
+        menuList.style.display = 'none';
+    }
+}
