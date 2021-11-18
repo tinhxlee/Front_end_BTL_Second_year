@@ -4,7 +4,7 @@ var images = [
     './image/Slider/2.jpg',
     './image/Slider/3.jpg',
     './image/Slider/4.jpg',
-    './image/Slider/coffee-banner.jpg'
+    './image/Slider/5.jpg'
 ];
 var num = 0 ;
 function next(){
@@ -30,18 +30,45 @@ setInterval(function(){
 
 },5000)
 
-// Acount
-const account = document.querySelector('.account');
-const out = document.querySelector('.out-btn');
-// account.addEventListener('click',openSignout);
-account.onclick = function(){
-    if(out.style.display == 'none'){
-        out.style.display = 'block';
+// Model buy
+const model = document.querySelector('.model-buy');
+const buyBtns = document.querySelectorAll('.buy');
+function showLogin(){
+    model.style.display = 'flex';
+}
+for(const buyBtn of buyBtns){
+    buyBtn.addEventListener('click',showLogin);
+}
+function closeLogin(){
+    model.style.display = 'none';
+}
+model.addEventListener('click',closeLogin);
+// Input email
+// const input = document.querySelector('.input');
+const btnEmail = document.querySelector('.btn');
+let modelEmail = document.querySelector('.success-email')
+// function checkEmail(){
+//     if(input.test('/[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,}$/') == true){
+//         return true ;
+//     }else {
+//         return false
+//     }
+// }
+let e = /[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,}$/;
+let inputId = document.getElementById('input-id').value ;
+function success(){ 
+    if(e.test(inputId) == false){
+        alert('hay nhap mk');
+        // return true;
     }
     else{
-        out.style.display = 'none';
+        // modelEmail.style.display = 'flex';
+        alert('cam on ban');
     }
 }
+function closeSuccess(){
+    modelEmail.style.display = 'none';
+}
 
-
-
+// var checkEmail = /[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,}$/ ;
+modelEmail.addEventListener('click',closeSuccess);

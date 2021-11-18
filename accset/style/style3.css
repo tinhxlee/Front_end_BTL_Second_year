@@ -5,6 +5,9 @@
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
 }
+a{
+    cursor: pointer;
+}
 /* Nav */
 .home{
     position: fixed;
@@ -34,6 +37,7 @@
 .nav-list{
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 .nav-list li{
     list-style: none;
@@ -49,7 +53,6 @@
     margin-left: 50px;
 }
 .nav-list .nav-name{
-    margin-left: 20px;
     padding: 0 20px;
     display: inline-block;
     line-height: 70px;
@@ -394,10 +397,41 @@ button:hover i{
     cursor: pointer;
     border: 1px solid rgb(94, 41, 41) ;
     border-radius: 3px;
+    width: 100px;
+    margin-top: 20px;
 }
 .btn:hover{
     background-color: rgb(94, 41, 41) ;
     color: #fff ;
+}
+.success-email{
+    position: fixed;
+    background-color: rgba(0, 0, 0,0.6);   
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.success-email h3{
+    width: 500px;
+    height: 200px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 70px ;
+    position: relative;
+    color: rgb(94, 41, 41);
+}
+.success-email i{
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    color: rgb(94, 41, 41);
+    right: 0;
+    left: 0;
 }
 .social{
 }
@@ -424,5 +458,55 @@ button:hover i{
     background-color: rgb(94, 41, 41) ;
     color: #fff;
 }
-
+/* Model */
+.model-buy{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    display: none;
+}
+.model-buy .login-model{
+    display: flex;
+    position: relative;
+    width: 900px;
+    background-color: #fff;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+.login-model li{
+    list-style: none;
+}
+.login-model a{
+    text-decoration: none;
+    color: rgb(94, 41, 41);
+    margin-right: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 2px solid rgb(94, 41, 41);
+    background-color: #fff;
+    border-radius: 3px;
+    margin-bottom: 100px;
+}
+.login-model a:hover{
+    background-color: rgb(94, 41, 41);
+    color: #fff;
+}
+.login-model h3{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 10px;
+    color: rgb(94, 41, 41);
+}
 

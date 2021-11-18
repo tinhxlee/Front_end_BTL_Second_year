@@ -33,7 +33,8 @@
 .nav-list{
     display: flex;
     align-items: center;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    justify-content: space-around;
 }
 .nav-list li{
     list-style: none;
@@ -48,7 +49,7 @@
     width:60px;
 }
 .nav-list .nav-name{
-    margin-left: 20px;
+    /* margin-left: 20px; */
     padding: 0 20px;
     display: inline-block;
     line-height: 70px;
@@ -100,6 +101,29 @@
     color: #fff;
     background-color: rgb(94, 41, 41) ;
 }
+.account i{
+    margin-right: 50px;
+    cursor: pointer;
+    font-size: 30px;
+    color:rgb(94, 41, 41) ;
+}
+.account a{
+    background-color: rgb(94, 41, 41);
+    position: absolute;
+    text-decoration: none;
+    top: 50px;
+    display: none;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100px;
+    right: 10px;
+    border-radius: 3px;
+}
+.account a:hover{
+    background-color: rgb(211, 195, 195);
+    color:rgb(94, 41, 41) ;
+}
+
 /* Back-home */
 .back-home{
     text-align: center;

@@ -18,7 +18,7 @@
         <div class="menu-nav">
             <a href=""><i class="fas fa-bars"></i></a>
         </div>
-        <a href="#"><img src="./image/menu/deer-1.jpg" alt="Logo"></a>
+        <a href="#"><img src="./image/nav/deer-1.jpg" alt="Logo"></a>
         <ul class="nav-list">
             <li><a class="nav-name" href="#about-1">About</a></li>
             <li><a class="nav-name" href="#store-id">Store</a></li>
@@ -43,7 +43,6 @@
     <button onclick="prev()"><i class="fas fa-chevron-left slider-prev"></i></button>
     <button onclick="next()"><i class="fas fa-chevron-right slider-next"></i></button>
 </div>
-<script src="./main3.js"></script>
 
 <!-- Ends Slider -->
 
@@ -57,7 +56,7 @@
                 </p>
                 <p class="mt-30">Chúng tôi tin rằng từng sản phẩm trà và cà phê sẽ càng thêm hảo hạng khi được tạo ra từ sự phấn đấu không ngừng cùng niềm đam mê. Và chính kết nối dựa trên niềm tin, sự trung thực và tin yêu sẽ góp phần mang đến những nét đẹp trong văn hóa thưởng trà và cà phê ngày càng bay cao, vươn xa.</p>
                 <br>
-                <a class="btn-a mt-30" href="us.html">Xem thêm</a>
+                <a class="btn-a mt-30" href="./accset/us/us.html">Xem thêm</a>
             </div>
         </div>
         <div class="about-item item-rv">
@@ -123,7 +122,7 @@
                     <div class="letter-menu pr-30 ">
                         <h3>Coffee</h3>
                         <p>Việt Nam tự hào sở hữu một di sản văn hóa cà phê giàu có, và 'Phin' chính là linh hồn, là nét văn hóa thưởng thức cà phê đã ăn sâu vào tiềm thức biết bao người Việt. Cà phê rang xay được chiết xuất chậm rãi từng giọt một thông qua dụng cụ lọc bằng kim loại có tên là 'Phin', cũng giống như thể hiện sự sâu sắc trong từng suy nghĩ và chân thành trong những mối quan hệ hiện hữu. Bạn có thể tùy thích lựa chọn uống nóng hoặc dùng chung với đá, có hoặc không có sữa đặc. Highlands Coffee tự hào phục vụ cà phê Việt theo cách truyền thống của người Việt.</p>
-                        <a href="./menu/coffee.html">Buy Now!</a>    
+                        <a class="buy">Buy Now!</a>    
                     </div>
                     <img src="./image/menu/menu-cf.jpg" alt="">
                 </div>
@@ -134,7 +133,7 @@
 
                             Mỗi chiếc bánh ở Nguyễn Sơn Bakery lại mang một vẻ riêng, từ hương vị đến cách trang trí. Hình thức giản dị chỉ với hai màu đen trắng làm chủ đạo nhưng chất lượng nhờ cách làm tinh tế và tỉ mỉ. Bánh có vị ngọt không quá đậm, vị béo thì thanh nên không gây cảm giác ngán cho người thưởng thức. Cũng rất hiếm khi tìm thấy sự trùng lặp trong các loại bánh ở Nguyễn Sơn Bakery vì tất cả chúng, từ bánh mì, bánh ngọt, bánh quy đều được làm 100% hand-made.
                             Hơn nữa, ông chủ của tiệm bánh, Chef Nguyễn Sơn, cũng là người khá khó tính trong việc lựa chọn nguyên liệu cho các sản phẩm của cửa hàng.</p>
-                        <a href="./menu/cake.html">Buy Now!</a>    
+                        <a  class="buy">Buy Now!</a>    
                     </div>
                     <img class="pr-30" src="./image/menu/menu-cake.jpg" alt="">
                 </div>
@@ -142,7 +141,7 @@
                     <div class="letter-menu pr-30">
                         <h3>Fruits</h3>
                         <p>Với tôn chỉ “Mang đến cho khách hàng không chỉ là những sản phẩm trái cây an toàn, chất lượng cao, mà kèm theo đó là những dịch vụ tiện ích thân thiện. ”Công ty CP xuất nhập khẩu Fuji” - đơn vị chuyên nhập khẩu các loại trái cây cao cấp từ các nước trên thế giới đang từng bước phát triển và chiếm được lòng tin của người tiêu dùng Việt Nam. Hiện tại, công ty có hệ thống các cửa hàng mang thương hiệu Hoa quả sạch Fuji được phân bố rộng khắp trên địa bàn các tỉnh phía Bắc phục vụ đủ nhu cầu cho mọi khách hàng. Bằng những nỗ lực không ngừng theo thời gian, hệ thống Hoa quả sạch Fuji từng ngày hoàn thiện hơn về tất cả mọi mặt.</p>
-                        <a href="./menu/fruit.html">Buy Now!</a>    
+                        <a class="buy" >Buy Now!</a>    
                     </div>
                     <img src="./image/menu/menu-fruit-2.jpg" alt="">
                 </div>    
@@ -161,9 +160,9 @@
                 </div>
                 <div class="send">
                     <p>Đăng ký nhận tin khuyến mại </p>
-                    <form action="">
-                        <input class="input" type="email" required placeholder="Email"> 
-                        <input class="btn" type="submit" required> 
+                    <form>
+                        <input id="input-id" class="input" type="email" required placeholder="Enter your Email"> 
+                        <input onclick="success();" class="btn" required type="submit" value="SUBMIT">
                     </form>
                 </div>
                 <div class="social">
@@ -184,6 +183,16 @@
     <div class="footer">
         <p><i class="far fa-copyright"></i> 2021 - Bản quyền thuộc Team 8</p>
     </div>
-
+    <div class="model-buy">
+        <ul class="login-model">
+            <h3>PLEASE SIGN IN OR SIGN UP</h3> 
+            <li><a href="./login/login.html">Sign in</a></li>
+            <li><a href="./sign up/index.html">Sign up</a></li>
+        </ul>
+    </div>
+    <div class="success-email">       
+        <h3><i class="far fa-check-circle model-email"></i> <br> Thank you for using our service !!!</h3>
+    </div>
+    <script src="./main3.js"></script>
 </body>
 </html>
