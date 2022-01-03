@@ -47,7 +47,6 @@ model.addEventListener('click',closeLogin);
 const btnEmail = document.querySelector('.btn');
 let modelEmail = document.querySelector('.success-email')
 let inputID = document.getElementById('input-id');
-// btnEmail.addEventListener('click',success());
 function success(){
     if(inputID.value == ''){
         alert('Hay nhap email');
@@ -56,20 +55,9 @@ function success(){
         modelEmail.style.display = 'flex';
     }
 }
-// function valicheck(){
-//     var email = document.getElementById("mail_text").value;
-//     if (email == "") {
-//     alert("Email không được để trống");
-//     }
-//     else{
-//         modelEmail.style.display = 'flex';
-//     }
-    
-// }
 function closeSuccess(){
     modelEmail.style.display = 'none';
 }
-
 modelEmail.addEventListener('click',closeSuccess);
 // Mobile - menu
 let menuBtn = document.getElementById('menu-mobile-id');

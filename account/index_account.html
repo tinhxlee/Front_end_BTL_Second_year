@@ -43,7 +43,6 @@
     <button onclick="prev()"><i class="fas fa-chevron-left slider-prev"></i></button>
     <button onclick="next()"><i class="fas fa-chevron-right slider-next"></i></button>
 </div>
-<script src="./main_account.js"></script>
 
 <!-- Ends Slider -->
 
@@ -162,8 +161,8 @@
                 <div class="send">
                     <p>Đăng ký nhận tin khuyến mại </p>
                     <form action="">
-                        <input class="input" type="email" required placeholder="Email"> 
-                        <input class="btn" type="submit" required> 
+                        <input id="input-id" class="input" type="email" required placeholder="Email"> 
+                        <input onclick="success()" class="btn" type="button" value="SUBMIT" > 
                     </form>
                 </div>
                 <div class="social">
@@ -184,6 +183,10 @@
     <div class="footer">
         <p><i class="far fa-copyright"></i> 2021 - Bản quyền thuộc Team 8</p>
     </div>
+    <div class="success-email">       
+        <h3><i class="far fa-check-circle model-email"></i> <br> Thank you for using our service !!!</h3>
+    </div>
+    <script src="./main_account.js"></script>
 
 </body>
 </html>

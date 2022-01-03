@@ -423,5 +423,35 @@ button:hover i{
     background-color: rgb(94, 41, 41) ;
     color: #fff;
 }
+.success-email{
+    position: fixed;
+    background-color: rgba(0, 0, 0,0.6);   
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transition: 100s linear;
+}
+.success-email h3{
+    width: 500px;
+    height: 200px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 70px ;
+    position: relative;
+    color: rgb(94, 41, 41);
+}
+.success-email i{
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    color: rgb(94, 41, 41);
+    right: 0;
+    left: 0;
+}
 
 

@@ -41,6 +41,25 @@ account.onclick = function(){
         out.style.display = 'none';
     }
 }
+// Input email
+const btnEmail = document.querySelector('.btn');
+let modelEmail = document.querySelector('.success-email')
+let inputID = document.getElementById('input-id');
+// btnEmail.addEventListener('click',success());
+function success(){
+    if(inputID.value == ''){
+        alert('Hay nhap email');
+    }
+    else {
+        modelEmail.style.display = 'flex';
+    }
+}
+function closeSuccess(){
+    modelEmail.style.display = 'none';
+}
+
+modelEmail.addEventListener('click',closeSuccess);
+
 
 
 
